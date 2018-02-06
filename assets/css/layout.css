@@ -38,4 +38,36 @@ header, main, footer, section {
 
 form.load-image-form {
   display: flex;
+  justify-content: center;
 }
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+
+
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.full-image-link {
+  text-align: center;
+}
+
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.image-box {
+  padding: 20px;
+  width: 250px;
+}
+

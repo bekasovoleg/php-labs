@@ -22,23 +22,24 @@
   </form>
 </section>
 
-<section>
+<section class="images">
   <h3>Here is a list of all images:</h3>
 
 
+  <div class="images-list">
   <?php foreach($images as $image) { ?>
+    <div class="image-box">
 
-    <img src="<?php echo "assets/img/$image->name"; ?>"
-         alt="<?php echo "$image->alt"; ?>"
-         title="<?php echo "$image->title"; ?>"
-         height="42"
-         width="42">
+      <div class="image-preview">
+        <img src="<?php echo "assets/img/$image->name"; ?>"
+             alt="<?php echo "$image->alt"; ?>"
+             title="<?php echo "$image->title"; ?>">
+      </div>
 
-    <p>
-      <a href='?controller=images&action=show&id=<?php echo $image->id; ?>'><?php echo "$image->name ($image->views views)"; ?></a>
-    </p>
-
-
-
+      <div class="full-image-link">
+        <a href='?controller=images&action=show&id=<?php echo $image->id; ?>'><?php echo "$image->name ($image->views views)"; ?></a>
+      </div>
+    </div>
   <?php } ?>
+  </div>
 </section>
