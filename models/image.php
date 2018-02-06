@@ -46,5 +46,12 @@
       $req = $db->prepare('INSERT INTO images (name, alt, title) VALUES (:name, :alt, :title)');
       $req->execute(array('name' => $name, 'alt' => $alt, 'title' => $title));
     }
+
+
+    public static function addView($id) {
+      $db = Db::getInstance();
+      $req = $db->prepare('UPDATE images SET views=views+1 WHERE id=:id');
+      $req->execute(array('id' => $id));
+    }
   }
 ?>

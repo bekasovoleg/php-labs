@@ -11,10 +11,7 @@
       </header>
 
       <main>
-        <section>
-          <?php require_once('routes.php'); ?>
-        </section>
-
+        <?php require_once('routes.php'); ?>
       </main>
 
 

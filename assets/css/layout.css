@@ -23,6 +23,15 @@ header {
 main {
   flex-grow: 1;
   border: 2px solid green;
+  display: flex;
+}
+
+aside.load-image {
+  width: 35%;
+}
+
+section.images {
+  width: 65%;
 }
 
 footer {
@@ -32,14 +41,14 @@ footer {
 }
 
 
-header, main, footer, section {
+header, main, footer, section, aside {
   padding: 10px;
 }
 
-form.load-image-form {
+/*form.load-image-form {
   display: flex;
   justify-content: center;
-}
+}*/
 
 img {
     border: 1px solid #ddd;
@@ -75,3 +84,39 @@ img:hover {
   width: 80%;
   margin: auto;
 }
+
+
+  input[type=text], input[type=file] {
+      width: 100%;
+      padding: 12px;
+      width: 100%;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+  }
+
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #23272b;
+    border-color: #1d2124;
+      border-radius: 4px;
+
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+
+
+
+
+
