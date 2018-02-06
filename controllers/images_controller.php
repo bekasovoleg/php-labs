@@ -18,8 +18,24 @@
     }
 
     public function update() {
-      echo "Load image";
+      if (isset($_FILES['file'])) {
+        self::upload_file($_FILES['file'], $_POST["alt"], $_POST["title"]);
+      }
     }
 
+    private static function upload_file($file, $alt, $title) {
+      if ($file['name'] == '') {
+        echo 'No file!';
+        return;
+      }
+
+      if(copy($file['tmp_name'], 'assets/img/'.$file['name'])) {
+        Images::add($file['name'], $alt, $title);
+        echo 'File loaded';
+      } else {
+        echo 'Error loading file';
+        echo $_SERVER['DOCUMENT_ROOT'];
+      }
+    }
   }
 ?>

@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  /*padding: 0;*/
   box-sizing: border-box;
 }
 
@@ -32,6 +32,10 @@ footer {
 }
 
 
-header, main, footer {
+header, main, footer, section {
   padding: 10px;
+}
+
+form.load-image-form {
+  display: flex;
 }
