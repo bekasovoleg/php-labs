@@ -71,3 +71,7 @@ img:hover {
   width: 250px;
 }
 
+.image-full {
+  width: 80%;
+  margin: auto;
+}
