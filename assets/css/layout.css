@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+header {
+  border: 2px solid green;
+  height: 55px;
+}
+
+
+main {
+  flex-grow: 1;
+  border: 2px solid green;
+}
+
+footer {
+  border: 2px solid green;
+  height: 55px;
+  text-align: center;
+}
+
+
+header, main, footer {
+  padding: 10px;
+}
