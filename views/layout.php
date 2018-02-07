@@ -6,7 +6,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <a href='/home'>Home</a>
+        <!-- <a href='/home'>Home</a> -->
         <a href='?controller=images&action=index'>Images</a>
       </header>
 
