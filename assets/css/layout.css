@@ -31,12 +31,12 @@ main {
 }
 
 aside.load-image {
-  width: 35%;
+  width: 30%;
 }
 
 section.images {
   overflow: auto;
-  width: 65%;
+  width: 70%;
   height: 100%;
 }
 
@@ -51,11 +51,6 @@ header, main, footer, section, aside {
   padding: 10px;
 }
 
-/*form.load-image-form {
-  display: flex;
-  justify-content: center;
-}*/
-
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -67,7 +62,7 @@ img {
 }
 
 img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
 .full-image-link {
@@ -83,7 +78,7 @@ img:hover {
 
 .image-box {
   padding: 20px;
-  width: 220px;
+  width: 250px;
 }
 
 .image-full {
@@ -115,14 +110,3 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     width: 100%;
 }
-
-color: #fff;
-    background-color: #23272b;
-    border-color: #1d2124;
-}
-
-
-
-
-
-

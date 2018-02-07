@@ -3,6 +3,9 @@
     public function index() {
       // we store all the images in a variable
       $images = Images::all();
+      usort($images, function($a, $b) {
+        return $a->views < $b->views;
+      });
       require_once('views/images/index.php');
     }
 
