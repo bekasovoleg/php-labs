@@ -7,7 +7,7 @@
     <div class="wrapper">
       <header>
         <!-- <a href='/home'>Home</a> -->
-        <a href='?controller=images&action=index'>Images</a>
+        <h2><a href='?controller=images&action=index'>Images</a></h2>
       </header>
 
       <main>
@@ -16,7 +16,7 @@
 
 
       <footer>
-        Copyright
+        <h4>420604 Oleg Bekasov - labs 6,7,8</h4>
       </footer>
     </div>
   <body>
