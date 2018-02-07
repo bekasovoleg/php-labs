@@ -31,7 +31,7 @@
         </div>
 
         <div class="full-image-link">
-          <a href='?controller=images&action=show&id=<?php echo $image->id; ?>'><?php echo "$image->name ($image->views views)"; ?></a>
+          <a target="_blank" href='?controller=images&action=show&id=<?php echo $image->id; ?>'><?php echo "$image->name ($image->views views)"; ?></a>
         </div>
       </div>
     <?php } ?>
